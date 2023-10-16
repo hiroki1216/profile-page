@@ -1,5 +1,4 @@
 <script setup>
-import Users from './components/Users.vue'
 import { nextTick, ref } from 'vue'
 const count = ref(1);
 const increment = async ()=> {
@@ -10,40 +9,53 @@ const increment = async ()=> {
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <a href="index.html"><img src="../src/assets/logo.jpeg" height="75"  alt="ウェブサンプル株式会社"></a>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">WORKS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <Users></Users>
     <p>{{ count }}</p>
     <button @click="increment">カウントアップ</button>
   </main>
 </template>
 
 <style scoped>
-header {
-  /* line-height: 1.5; */
+header{
+  display: flex;
+  border-bottom: 1px solid #dcd9d9;
+  }
+nav{
+  width: 100%;
+  height :75px;
+  display: flex;
+  justify-content: space-around;
+}
+ul{
+  width: 50%;
+ display: flex;
+ justify-content: space-around;
+ font-weight: bold;
+}
+li{
+  color: black;
+  list-style: none;
+  margin: auto 0;
+}
+a:hover {
+  color: aqua;
 }
 
-.logo {
-  /* display: block; */
-  /* margin: 0 auto 2rem; */
+a {
+color:inherit;
+ text-decoration: none;
 }
-
-@media (min-width: 1024px) {
-  header {
-    /* display: flex; */
-    /* place-items: center; */
-    /* padding-right: calc(var(--section-gap) / 2); */
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    /* display: flex; */
-    /* place-items: flex-start; */
-    /* flex-wrap: wrap; */
-  }
+img{
+  border-radius: 10px;
 }
 </style>
