@@ -1,19 +1,10 @@
 <script setup>
-import { nextTick, ref } from 'vue'
-import Header from './pages/Header.vue'
-const count = ref(1);
-const increment = async ()=> {
-  count.value++
-  await nextTick();
-}
+import Header from '@/components/Header.vue'
 </script>
 
 <template>
   <Header></Header>
-  <main>
-    <p>{{ count }}</p>
-    <button @click="increment">カウントアップ</button>
-  </main>
+  <router-view></router-view>
 </template>
 
 <style scoped>
