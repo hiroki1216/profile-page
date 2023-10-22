@@ -4,11 +4,10 @@
     <header>
         <img src="@/assets/logo.jpeg" height="75"  alt="H.Sプロフィールページ">
         <nav>
-          <router-link class="nav-link" to="/" exact active-class="link--active" >Top</router-link>
-          <router-link class="nav-link" to="about" active-class="link--active" >About</router-link>
-          <router-link class="nav-link" to="works" active-class="link--active" >Works</router-link>
-          <router-link class="nav-link" to="contact" active-class="link--active" >Contact</router-link>
-          <router-link class="nav-link" to="login" active-class="link--active" >Admin</router-link>
+          <router-link class="nav-link" to="/admin" exact active-class="link--active" >Top</router-link>
+          <router-link class="nav-link" to="/admin/about" active-class="link--active" >About編集</router-link>
+          <router-link class="nav-link" to="/admin/works" active-class="link--active" >Works編集</router-link>
+          <router-link class="nav-link" to="/admin/logout" active-class="link--active" >ログアウト</router-link>
         </nav>
   </header>
   <router-view></router-view>

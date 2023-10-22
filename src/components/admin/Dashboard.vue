@@ -1,9 +1,7 @@
 <script setup>
 </script>
-
 <template>
-  <router-view></router-view>
+    <h2>Admin Dashboard</h2>
 </template>
-
 <style scoped>
 </style>
