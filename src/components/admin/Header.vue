@@ -14,6 +14,10 @@
 </template>
 <style scoped>
 header{
+  position: sticky;
+  background-color: azure;
+  top: 0;
+  z-index: 1;
   display: flex;
   border-bottom: 1px solid #dcd9d9;
   }
